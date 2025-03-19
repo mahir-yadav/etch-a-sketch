@@ -1,6 +1,6 @@
-* {
-    /* outline: 2px solid red; */
-}
+/* * {
+    outline: 2px solid red;
+} */
 
 
 
@@ -24,15 +24,22 @@ body {
 .gridboxes {
     box-sizing: border-box;
     border: 1px solid #eee;
+    background-color: white;
 }
 
-button {    
+button {
     padding: 10px;
     font-size: 20px;
     border-radius: 5px;
     background-color: white;
 
 }
-button:hover{
+
+button:hover {
     background-color: #f0f0f0;
+}
+
+.features {
+    display: flex;
+    gap: 25px;
 }

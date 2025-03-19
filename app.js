@@ -37,7 +37,14 @@ function set(cell) {
         cell.style.backgroundColor = `rgb(${Math.random() * 255},${Math.random() * 255}, ${Math.random() * 255})`
 
     } else if (curmode === "darker") {
+        let curcolor = window.getComputedStyle(cell).backgroundColor;
+        rgbvalues = curcolor.match(/\d+/g)
+        for (let i = 0; i < 3; i++) {
+            rgbvalues[i] = Math.floor(rgbvalues[i] * 0.9);
 
+        }
+        cell.style.backgroundColor = `rgb(${rgbvalues[0]},${rgbvalues[1]},${rgbvalues[2]})`
+        // console.log(rgbvalues)
     }
 }
 function change(mode) {

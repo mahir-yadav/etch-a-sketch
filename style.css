@@ -21,6 +21,10 @@ body {
     flex-wrap: wrap;
 }
 
+h1 {
+    margin: 0;
+}
+
 .gridboxes {
     box-sizing: border-box;
     border: 1px solid #eee;

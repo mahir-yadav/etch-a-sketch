@@ -27,6 +27,10 @@ body {
     background-color: white;
 }
 
+.gridboxes:hover {
+    transform: scale(1.2);
+}
+
 button {
     padding: 10px;
     font-size: 20px;
@@ -41,5 +45,5 @@ button:hover {
 
 .features {
     display: flex;
-    gap: 25px;
+    gap: 20px;
 }

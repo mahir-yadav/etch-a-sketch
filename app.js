@@ -30,6 +30,7 @@ function reset() {
     }
 }
 function set(cell) {
+
     if (curmode === "black") {
         cell.style.backgroundColor = "black"
     }
@@ -45,9 +46,13 @@ function set(cell) {
         }
         cell.style.backgroundColor = `rgb(${rgbvalues[0]},${rgbvalues[1]},${rgbvalues[2]})`
         // console.log(rgbvalues)
+    } else if (curmode === "white") {
+        cell.style.backgroundColor = "white";
+    } else {
+        return;
     }
 }
 function change(mode) {
     curmode = mode
 }
-make(64);
+make(32);

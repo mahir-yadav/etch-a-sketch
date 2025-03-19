@@ -1,6 +1,6 @@
 let cont = document.getElementById("grid-container")
 
-
+let curmode = "black"
 function make(sz) {
     const s = 650 / sz
     cont.innerHTML = ''
@@ -9,9 +9,7 @@ function make(sz) {
         cell.className = "gridboxes"
         cell.style.height = `${s}px`
         cell.style.width = `${s}px`
-        cell.addEventListener("mouseover", () => {
-            cell.style.backgroundColor = "black"; // Change to any color
-        });
+        cell.addEventListener("mouseover", () => set(cell));
         cont.append(cell)
 
     }
@@ -25,4 +23,24 @@ function makeboard() {
         alert("Enter a valid number between 1 to 100")
     }
 }
-make(16);
+function reset() {
+    boxes = document.getElementsByClassName("gridboxes")
+    for (let i = 0; i < boxes.length; i++) {
+        boxes[i].style.backgroundColor = ''
+    }
+}
+function set(cell) {
+    if (curmode === "black") {
+        cell.style.backgroundColor = "black"
+    }
+    else if (curmode === "random") {
+        cell.style.backgroundColor = `rgb(${Math.random() * 255},${Math.random() * 255}, ${Math.random() * 255})`
+
+    } else if (curmode === "darker") {
+
+    }
+}
+function change(mode) {
+    curmode = mode
+}
+make(64);

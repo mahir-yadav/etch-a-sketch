@@ -1,0 +1,27 @@
+* {
+    /* outline: 2px solid red; */
+}
+
+
+
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #f0f0f0;
+    gap: 30px;
+}
+
+.container {
+    height: 650px;
+    width: 650px;
+    background-color: white;
+    border: 2px solid black;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.gridboxes {
+    box-sizing: border-box;
+    border: 1px solid #eee;
+}

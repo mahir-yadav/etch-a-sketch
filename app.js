@@ -2,7 +2,7 @@ let cont = document.getElementById("grid-container")
 
 let curmode = "black"
 function make(sz) {
-    const s = 650 / sz
+    const s = 600 / sz
     cont.innerHTML = ''
     for (let i = 0; i < sz * sz; i++) {
         let cell = document.createElement("div");

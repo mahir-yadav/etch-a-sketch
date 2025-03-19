@@ -13,8 +13,8 @@ body {
 }
 
 .container {
-    height: 650px;
-    width: 650px;
+    height: 600px;
+    width: 600px;
     background-color: white;
     border: 2px solid black;
     display: flex;
